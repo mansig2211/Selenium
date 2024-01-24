@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Robot_class_demo">
+      <class name="com.flipkart.action.searchItemAction">
         <methods>
-          <include name="uploadFile"/>
+          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="createTestReport"/>
+          <include name="createReport"/>
+          <include name="searchAnItem" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Robot_class_demo -->
+      </class> <!-- com.flipkart.action.searchItemAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

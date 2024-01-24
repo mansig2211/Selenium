@@ -135,7 +135,7 @@ public class searchItemAction extends baseClassSetup
 				
 				Thread.sleep(2000);
 				
-				searchItem.search(item);
+				searchItem.search("fruit");
 				test.pass("Searched for " +item);
 				
 				searchItem.clickOnSearch();
